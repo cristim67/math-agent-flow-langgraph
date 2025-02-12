@@ -303,7 +303,7 @@ async def approve_calculation(request: Request, request_id: str, approval: Appro
             logger.warning(f"Request ID {request_id} not found in MongoDB")
             return {"error": "Request ID not found"}
         
-        # Reconstituim mesajele din dicționar
+        # Reconstruct the messages from the dictionary
         messages = [
             HumanMessage(content=msg["content"]) if msg["type"] == "HumanMessage"
             else AIMessage(content=msg["content"])
