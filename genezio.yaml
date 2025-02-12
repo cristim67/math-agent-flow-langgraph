@@ -1,0 +1,15 @@
+name: math-agent-flow-langgraph
+region: us-east-1
+yamlVersion: 2
+backend:
+    path: .
+    language:
+        name: python
+        packageManager: pip
+        runtime: python3.13.x
+    functions:
+        - name: fastapi
+          path: .
+          handler: app
+          entry: app.py
+          type: httpServer

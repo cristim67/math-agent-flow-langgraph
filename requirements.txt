@@ -1,0 +1,7 @@
+langchain
+langchain-anthropic
+langchain-core
+langchain-genezio
+anthropic
+fastapi
+uvicorn
