@@ -13,3 +13,8 @@ backend:
           handler: app
           entry: app.py
           type: httpServer
+services:
+    databases:
+        - name: mongo-db
+          region: eu-central-1
+          type: mongo-atlas
