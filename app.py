@@ -39,7 +39,6 @@ def multiply(numbers: str) -> float:
 
 # Initialize LLM models
 analyzer_llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo", openai_api_key=openai_api_key)
-calculator_llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo", openai_api_key=openai_api_key)
 
 # Agent definitions
 def analyzer(state: AgentState) -> AgentState:

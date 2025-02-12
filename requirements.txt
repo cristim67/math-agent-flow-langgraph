@@ -1,7 +1,9 @@
 langchain
 langchain-anthropic
 langchain-core
-langchain-genezio
+langchain_openai
 anthropic
 fastapi
 uvicorn
+python-dotenv
+langgraph
